@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-tw">
+<head>
+<meta cheast="utf-8">
+<title>Documeat</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+.full-screen{
+	position:fixed;
+	top:0;
+	left:0;
+	width:0;
+	height:0;
+	ackground:rgba(0,0,0,5);
+	z-index:10;
+	display:flex;
+justify-content:center
+aligen-items;center
+}
+p{
+color:red
+margin:10px
+cursor:pointer
+}
+p:hover{
+background:green
+}
+</style>
+</head>
+<body>
+<p>商品簡介</p>
+#<div class="product" align=center>
+<div class="full-screen">
+<h1>污漬終結者3000</h1>
+<img src="https://inews.gtimg.com/newsapp_bt/0/11056897530/641" width="850" height="700">
+</div>
+<script>
+
+$("p").click(function(){
+	$(".full-screen").slideToggle();
+});
+$("img").click(function(){
+	$(".full-screen").slideToggle();
+});
+</script>
+</body>
+</html>
